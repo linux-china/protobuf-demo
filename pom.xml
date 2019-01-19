@@ -41,6 +41,11 @@
             <artifactId>protostuff-runtime</artifactId>
             <version>${protostuff.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>hessian</artifactId>
+            <version>4.0.59</version>
+        </dependency>
         <!--kotlin & serialization-->
         <dependency>
             <groupId>org.jetbrains.kotlinx</groupId>
