@@ -9,7 +9,7 @@ import org.mvnsearch.protobuf.UserDO;
 import org.openjdk.jmh.annotations.Benchmark;
 
 /**
- * protostuff test
+ * protostuff benchmark test
  *
  * @author linux_china
  */
