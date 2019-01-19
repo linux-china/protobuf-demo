@@ -1,4 +1,4 @@
-package org.mvnsearch.protobuf.benchmark;
+package org.mvnsearch.protobuf;
 
 import org.mvnsearch.protobuf.UserDO;
 import org.mvnsearch.protobuf.UserKDO;
