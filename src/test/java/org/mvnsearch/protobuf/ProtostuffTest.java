@@ -28,4 +28,16 @@ public class ProtostuffTest {
         System.out.println(userDO2.getName());
         Assertions.assertEquals(userDO.getName(), userDO2.getName());
     }
+
+    @Test
+    public void testGenerateProtobufIdl() {
+        RuntimeSchema<UserDO> userDORuntimeSchema = (RuntimeSchema<UserDO>) userDOSchema;
+        System.out.println("syntax = \"proto3\";");
+        System.out.println("package " + UserDO.class.getPackage().getName() + ";");
+        System.out.println("message " + UserDO.class.getSimpleName() + " {");
+        userDORuntimeSchema.getFields().forEach(userDOField -> {
+            System.out.println("    " + userDOField.type.name() + " " + userDOField.name + " = " + userDOField.number + ";");
+        });
+        System.out.println("}");
+    }
 }
