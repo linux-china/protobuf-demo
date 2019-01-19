@@ -1,5 +1,7 @@
 package org.mvnsearch.protobuf;
 
+import io.protostuff.Tag;
+
 import java.io.Serializable;
 
 /**
@@ -8,9 +10,13 @@ import java.io.Serializable;
  * @author linux_china
  */
 public class UserDO implements Serializable {
+    @Tag(1)
     private Integer id;
+    @Tag(2)
     private String name;
+    @Tag(4)
     private String email;
+    @Tag(5)
     private String phone;
 
     public UserDO() {
