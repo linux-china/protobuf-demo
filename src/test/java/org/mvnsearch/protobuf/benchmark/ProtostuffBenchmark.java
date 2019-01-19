@@ -5,6 +5,7 @@ import io.protostuff.ProtostuffIOUtil;
 import io.protostuff.Schema;
 import io.protostuff.runtime.RuntimeSchema;
 import jmh.mbr.junit5.Microbenchmark;
+import org.mvnsearch.protobuf.BaseBenchmark;
 import org.mvnsearch.protobuf.UserDO;
 import org.openjdk.jmh.annotations.Benchmark;
 
