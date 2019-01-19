@@ -1,0 +1,4 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"ProtobufNativeBenchmark.benchmark","thrpt",1,2,4599642.150,NaN,"ops/s"
+"ProtostuffBenchmark.benchmark","thrpt",1,2,3833577.784,NaN,"ops/s"
+"KotlinProtobufBenchmark.benchmark","thrpt",1,2,643337.553,NaN,"ops/s"
