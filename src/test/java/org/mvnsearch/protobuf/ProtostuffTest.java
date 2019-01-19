@@ -21,7 +21,7 @@ public class ProtostuffTest {
         UserDO userDO = new UserDO(1, "Jackie", "demo@demo.com", "186");
         final byte[] protostuff;
         // Re-use (manage) this buffer to avoid allocating on every serialization   buffer.clear()  performance still good
-        LinkedBuffer buffer = LinkedBuffer.allocate(512);
+        LinkedBuffer buffer = LinkedBuffer.allocate(256);
         protostuff = ProtostuffIOUtil.toByteArray(userDO, userDOSchema, buffer);
         UserDO userDO2 = userDOSchema.newMessage();
         ProtostuffIOUtil.mergeFrom(protostuff, userDO2, userDOSchema);
