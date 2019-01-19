@@ -24,6 +24,6 @@ I think some bugs in Kotlin protobuf serialization.
 # Benchmark mode: Throughput, ops/time
 ```
 
-* Results: 1: native protobuf, 2: protstuff 3: kotlin protobuf
+* Results: 1: native protobuf, 2: protostuff 3: kotlin protobuf
 
 ![Protobuf Libraries Benchmark](results.png)
