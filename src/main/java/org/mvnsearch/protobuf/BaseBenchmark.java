@@ -1,7 +1,5 @@
 package org.mvnsearch.protobuf;
 
-import org.mvnsearch.protobuf.UserDO;
-import org.mvnsearch.protobuf.UserKDO;
 import org.mvnsearch.user.UserPB;
 import org.openjdk.jmh.annotations.*;
 
