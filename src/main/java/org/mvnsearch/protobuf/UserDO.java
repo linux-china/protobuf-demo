@@ -1,11 +1,13 @@
 package org.mvnsearch.protobuf;
 
+import java.io.Serializable;
+
 /**
  * User javabean
  *
  * @author linux_china
  */
-public class UserDO {
+public class UserDO implements Serializable {
     private Integer id;
     private String name;
     private String email;
