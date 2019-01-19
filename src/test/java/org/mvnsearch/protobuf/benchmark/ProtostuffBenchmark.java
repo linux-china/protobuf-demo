@@ -21,7 +21,7 @@ public class ProtostuffBenchmark extends BaseBenchmark {
     @Benchmark
     public void benchmark() throws Exception {
         // Re-use (manage) this buffer to avoid allocating on every serialization   buffer.clear()
-        LinkedBuffer buffer = LinkedBuffer.allocate(512);
+        LinkedBuffer buffer = LinkedBuffer.allocate(256);
         UserDO userDO2 = userDOSchema.newMessage();
         ProtostuffIOUtil.mergeFrom(ProtostuffIOUtil.toByteArray(userDO, userDOSchema, buffer), userDO2, userDOSchema);
     }
