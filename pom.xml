@@ -234,7 +234,7 @@
                     </dependency>
                     <dependency>
                         <groupId>org.jetbrains.kotlin</groupId>
-                        <artifactId>kotlinx-maven-serialization-plugin</artifactId>
+                        <artifactId>kotlin-maven-serialization</artifactId>
                         <version>${kotlin.version}</version>
                     </dependency>
                 </dependencies>
