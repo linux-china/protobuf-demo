@@ -5,6 +5,8 @@ option java_outer_classname = "UserProto";
 
 package org.mvnsearch.user;
 
+import "google/protobuf/any.proto";
+
 message UserPB {
     int32 id = 1;
     string name = 2;
