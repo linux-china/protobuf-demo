@@ -11,10 +11,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <protobuf-java.version>3.9.0-rc-1</protobuf-java.version>
+        <protobuf-java.version>3.9.0</protobuf-java.version>
         <protostuff.version>1.5.9</protostuff.version>
-        <kotlin.version>1.3.40</kotlin.version>
-        <junit5.version>5.5.0-RC2</junit5.version>
+        <kotlin.version>1.3.41</kotlin.version>
+        <junit5.version>5.5.0</junit5.version>
         <jmh.version>1.21</jmh.version>
         <uberjar.name>benchmarks</uberjar.name>
     </properties>
