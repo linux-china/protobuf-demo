@@ -12,17 +12,17 @@ import org.mvnsearch.protobuf.UserKDO
  *
  * @author linux_china
  */
-@ImplicitReflectionSerializer
+@ExperimentalSerializationApi
 class KotlinSerializationTest {
 
     @Test
     fun testSerialization() {
         val user = UserKDO(1, "Jackie", "xxx@demo.com", "186")
-        val pbData = ProtoBuf.dump(user)
-        val pbUser = ProtoBuf.load<UserKDO>(pbData);
+        val pbData = ProtoBuf.encodeToByteArray(user)
+        val pbUser = ProtoBuf.decodeFromByteArray<UserKDO>(pbData);
         println(pbUser.name)
-        val jsonText =  Json.stringify(user)
-        val jsonUser = Json.parse<UserKDO>(jsonText)
+        val jsonText = Json.encodeToString(user)
+        val jsonUser = Json.decodeFromString<UserKDO>(jsonText)
         println(jsonUser.name)
         Assertions.assertEquals(pbUser.name, jsonUser.name)
     }
