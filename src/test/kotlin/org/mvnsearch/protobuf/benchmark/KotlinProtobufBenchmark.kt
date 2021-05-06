@@ -20,7 +20,8 @@ open class KotlinProtobufBenchmark : BaseBenchmark() {
 
     @Benchmark
     fun benchmark() {
-        val bytes = ProtoBuf.encodeToByteArray(userDO)
+        val userKDO = UserKDO(1, "Jackie", "demo@demo.com", "186")
+        val bytes = ProtoBuf.encodeToByteArray(userKDO)
         ProtoBuf.decodeFromByteArray<UserKDO>(bytes)
     }
 }
