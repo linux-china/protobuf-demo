@@ -11,13 +11,12 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <protobuf-java.version>3.15.6</protobuf-java.version>
-        <protostuff.version>1.7.2</protostuff.version>
-        <jackson.version>2.12.2</jackson.version>
-        <kotlin.version>1.4.31</kotlin.version>
-        <kotlinx-serialization.version>1.1.0</kotlinx-serialization.version>
+        <protobuf-java.version>3.15.8</protobuf-java.version>
+        <protostuff.version>1.7.4</protostuff.version>
+        <kotlin.version>1.5.0</kotlin.version>
+        <kotlinx-serialization.version>1.2.0</kotlinx-serialization.version>
         <junit5.version>5.7.1</junit5.version>
-        <jmh.version>1.29</jmh.version>
+        <jmh.version>1.30</jmh.version>
         <uberjar.name>benchmarks</uberjar.name>
     </properties>
 
@@ -40,15 +39,6 @@
             <groupId>io.protostuff</groupId>
             <artifactId>protostuff-runtime</artifactId>
             <version>${protostuff.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.caucho</groupId>
-            <artifactId>hessian</artifactId>
-            <version>4.0.65</version>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
         </dependency>
         <!--kotlin & serialization-->
         <dependency>
@@ -327,7 +317,7 @@
             <plugin>
                 <groupId>org.mvnsearch</groupId>
                 <artifactId>proto-rsocket-plugin</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>1.0.1</version>
                 <executions>
                     <execution>
                         <phase>compile</phase>
@@ -341,23 +331,6 @@
     </build>
 
     <repositories>
-        <repository>
-            <id>kotlin-eap</id>
-            <url>https://dl.bintray.com/kotlin/kotlin-eap/</url>
-        </repository>
-        <repository>
-            <id>bintray-kotlin-kotlinx</id>
-            <name>bintray</name>
-            <url>https://kotlin.bintray.com/kotlinx</url>
-        </repository>
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/libs-milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
