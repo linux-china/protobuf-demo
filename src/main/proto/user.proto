@@ -5,14 +5,24 @@ option java_outer_classname = "UserProto";
 
 package org.mvnsearch.user;
 
-//import "google/protobuf/struct.proto";
+import "google/protobuf/struct.proto";
 import "google/protobuf/any.proto";
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.MessageOptions {
+  optional string table = 51234;
+}
+
+extend google.protobuf.FieldOptions {
+  optional string column = 1189;
+}
 
 message UserPB {
-    int32 id = 1;
-    string name = 2;
-    string email = 3;
-    string phone = 4;
-    //.google.protobuf.DoubleValue balance=5;
+  option (table) = "user";
+  int32 id = 1   [(column) = "id"];
+  string name = 2;
+  string email = 3;
+  string phone = 4;
+  //.google.protobuf.DoubleValue balance=5;
 }
