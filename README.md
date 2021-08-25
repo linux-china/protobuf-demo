@@ -14,3 +14,8 @@ message TestJsonName {
   int32 value = 1 [json_name = "CustomJsonName"];
 }
 ```
+
+# References
+
+* Custom Options: https://developers.google.cn/protocol-buffers/docs/proto#customoptions
+* protobuf 之 Custom Options: https://izualzhy.cn/protobuf-custom-options
