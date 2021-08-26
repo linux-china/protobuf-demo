@@ -4,6 +4,7 @@ import com.google.protobuf.Any;
 import com.google.protobuf.DescriptorProtos;
 import com.google.protobuf.Descriptors;
 import com.google.protobuf.TextFormat;
+import com.google.protobuf.util.JsonFormat;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mvnsearch.user.UserPB;
@@ -29,6 +30,19 @@ public class ProtobufNativeJavaTest {
         UserPB pbUser = UserPB.parseFrom(pbBytes);
         System.out.println(pbUser.getName());
         Assertions.assertEquals(pbUser.getName(), user.getName());
+    }
+
+    @Test
+    public void testJson() throws Exception {
+        UserPB user = UserPB.newBuilder()
+                .setId(1)
+                .setName("Jackie")
+                .setEmail("demo@demo.com")
+                .setPhone("186").build();
+        String jsonText = JsonFormat.printer().print(user);
+        final UserPB.Builder user2 = UserPB.newBuilder();
+        JsonFormat.parser().merge(jsonText, user2);
+        System.out.println(user2.getName());
     }
 
     @Test
