@@ -19,3 +19,4 @@ message TestJsonName {
 
 * Custom Options: https://developers.google.cn/protocol-buffers/docs/proto#customoptions
 * protobuf 之 Custom Options: https://izualzhy.cn/protobuf-custom-options
+* Protobuf 扩展指南: https://cloud.tencent.com/developer/article/1627554
