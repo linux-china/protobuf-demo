@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <protobuf-java.version>3.17.3</protobuf-java.version>
+        <protobuf-java.version>3.18.0-rc-2</protobuf-java.version>
         <protostuff.version>1.7.4</protostuff.version>
         <kotlin.version>1.5.30</kotlin.version>
         <kotlinx-serialization.version>1.2.2</kotlinx-serialization.version>
