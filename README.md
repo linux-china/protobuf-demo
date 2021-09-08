@@ -15,7 +15,9 @@ message TestJsonName {
 }
 ```
 
-# Google Protobuf protos
+# Google Protobuf Well-Known protos
+
+Protobuf Well-Known types: https://developers.google.cn/protocol-buffers/docs/reference/google.protobuf
 
 * google/protobuf/any.proto: `Any` contains an arbitrary serialized protocol buffer message
 * google/protobuf/api.proto: Api is a light-weight descriptor for an API Interface
@@ -31,6 +33,7 @@ message TestJsonName {
 
 # References
 
+* Protocol Buffers Version 3 Language Specification: https://developers.google.cn/protocol-buffers/docs/reference/proto3-spec
 * Custom Options: https://developers.google.cn/protocol-buffers/docs/proto#customoptions
 * protobuf 之 Custom Options: https://izualzhy.cn/protobuf-custom-options
 * Protobuf 扩展指南: https://cloud.tencent.com/developer/article/1627554
