@@ -14,9 +14,9 @@ public class UserDO implements Serializable {
     private Integer id;
     @Tag(2)
     private String name;
-    @Tag(4)
+    @Tag(3)
     private String email;
-    @Tag(5)
+    @Tag(4)
     private String phone;
 
     public UserDO() {
