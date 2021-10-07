@@ -8,6 +8,8 @@ import io.protostuff.runtime.RuntimeSchema;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Locale;
+
 /**
  * protostuff test
  *
@@ -36,7 +38,7 @@ public class ProtostuffTest {
         System.out.println("package " + UserDO.class.getPackage().getName() + ";");
         System.out.println("message " + UserDO.class.getSimpleName() + " {");
         userDORuntimeSchema.getFields().forEach(userDOField -> {
-            System.out.println("    " + userDOField.type.name() + " " + userDOField.name + " = " + userDOField.number + ";");
+            System.out.println("    " + userDOField.type.name().toLowerCase() + " " + userDOField.name + " = " + userDOField.number + ";");
         });
         System.out.println("}");
     }
