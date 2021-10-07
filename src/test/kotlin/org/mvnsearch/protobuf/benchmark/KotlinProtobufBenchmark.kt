@@ -14,7 +14,6 @@ import org.openjdk.jmh.annotations.Benchmark
  *
  * @author linux_china
  */
-@ExperimentalSerializationApi
 @Microbenchmark
 open class KotlinProtobufBenchmark : BaseBenchmark() {
 
