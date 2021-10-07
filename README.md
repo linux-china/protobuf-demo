@@ -6,6 +6,8 @@ Protobuf Demo with Benchmark
 * Protobuf IDL https://developers.google.cn/protocol-buffers/
 * Kotlinx.serialization https://github.com/Kotlin/kotlinx.serialization
 * protostuff: https://github.com/protostuff/protostuff
+* wire: https://github.com/square/wire
+* ProtoStream:  https://github.com/infinispan/protostream https://infinispan.org/docs/stable/titles/encoding/encoding.html
 
 ### proto3 json_name
 
