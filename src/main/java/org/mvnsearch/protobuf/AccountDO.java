@@ -3,7 +3,7 @@ package org.mvnsearch.protobuf;
 import org.infinispan.protostream.annotations.ProtoFactory;
 import org.infinispan.protostream.annotations.ProtoField;
 
-public class AccountDO {
+public class AccountDO implements java.io.Serializable {
     @ProtoField(number = 1)
     Integer id;
     @ProtoField(number = 2)
