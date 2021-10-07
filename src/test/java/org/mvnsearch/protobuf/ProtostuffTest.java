@@ -1,14 +1,14 @@
 package org.mvnsearch.protobuf;
 
 
+import com.google.protobuf.TextFormat;
 import io.protostuff.LinkedBuffer;
 import io.protostuff.ProtostuffIOUtil;
 import io.protostuff.Schema;
 import io.protostuff.runtime.RuntimeSchema;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.Locale;
+import org.mvnsearch.user.UserPB;
 
 /**
  * protostuff test
@@ -29,6 +29,19 @@ public class ProtostuffTest {
         ProtostuffIOUtil.mergeFrom(protostuff, userDO2, userDOSchema);
         System.out.println(userDO2.getName());
         Assertions.assertEquals(userDO.getName(), userDO2.getName());
+    }
+
+    @Test
+    public void testWithNative() {
+        UserPB user = UserPB.newBuilder()
+                .setId(1)
+                .setName("Jackie")
+                .setEmail("demo@demo.com")
+                .setPhone("186").build();
+        byte[] pbBytes = user.toByteArray();
+        UserDO userDO = userDOSchema.newMessage();
+        ProtostuffIOUtil.mergeFrom(pbBytes, userDO, userDOSchema);
+        System.out.println(userDO.getName());
     }
 
     @Test
