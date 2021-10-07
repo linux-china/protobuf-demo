@@ -20,5 +20,5 @@ public class BaseBenchmark {
 
     protected UserDO userDO = new UserDO(1, "Jackie", "demo@demo.com", "186");
     protected UserKDO userKDO = new UserKDO(1, "Jackie", "demo@demo.com", "186");
-
+    protected AccountDO accountDO = new AccountDO(1, "Jackie", "demo@demo.com", "186");
 }
