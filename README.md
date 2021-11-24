@@ -42,4 +42,6 @@ Protobuf Well-Known types: https://developers.google.cn/protocol-buffers/docs/re
 * Practical API Design at Netflix, Part 1: Using Protobuf FieldMask: https://netflixtechblog.com/practical-api-design-at-netflix-part-1-using-protobuf-fieldmask-35cfdc606518
 * MARSHALLING CUSTOM JAVA OBJECTS WITH ProtoStream: https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.0/html/data_grid_developer_guide/protostream
 * Marshalling and Encoding Data with ProtoStream: https://infinispan.org/docs/stable/titles/encoding/encoding.html 
+* protoc-gen-doc: Documentation generator plugin for Google Protocol Buffers https://github.com/pseudomuto/protoc-gen-doc
+
 
