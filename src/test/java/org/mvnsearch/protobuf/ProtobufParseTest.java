@@ -3,6 +3,7 @@ package org.mvnsearch.protobuf;
 import io.protostuff.compiler.model.Message;
 import io.protostuff.compiler.model.Proto;
 import io.protostuff.compiler.parser.*;
+import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CodePointCharStream;
 import org.junit.jupiter.api.Test;
@@ -24,7 +25,7 @@ public class ProtobufParseTest {
                 "  optional int32 id = 2;\n" +
                 "  optional string email = 3;\n" +
                 "}\n";
-        CodePointCharStream charStream = CharStreams.fromReader(new StringReader(protobufText));
+        CharStream charStream = CharStreams.fromReader(new StringReader(protobufText));
         Importer importer = new ImporterImpl(new FileDescriptorLoaderImpl(new ParseErrorLogger(), Collections.emptySet()));
         ProtoContext protoContext = importer.importFile(name -> charStream, "demo.proto");
         Proto proto = protoContext.getProto();
