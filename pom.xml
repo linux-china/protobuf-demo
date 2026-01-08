@@ -14,9 +14,9 @@
     <java.version>17</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
-    <protobuf-java.version>4.32.0</protobuf-java.version>
+    <protobuf-java.version>4.33.2</protobuf-java.version>
     <protostuff.version>1.8.0</protostuff.version>
-    <kotlin.version>2.2.10</kotlin.version>
+    <kotlin.version>2.3.0</kotlin.version>
     <kotlinx-serialization.version>1.9.0</kotlinx-serialization.version>
     <junit5.version>5.13.4</junit5.version>
     <jmh.version>1.37</jmh.version>
@@ -155,19 +155,18 @@
     </extensions>
     <plugins>
       <plugin>
-        <groupId>org.xolstice.maven.plugins</groupId>
+        <groupId>io.github.ascopes</groupId>
         <artifactId>protobuf-maven-plugin</artifactId>
-        <version>0.6.1</version>
+        <version>4.1.2</version>
         <configuration>
-          <protocArtifact>com.google.protobuf:protoc:${protobuf-java.version}:exe:${os.detected.classifier}
-          </protocArtifact>
-          <pluginId>java</pluginId>
+          <protoc>${protobuf-java.version}</protoc>
+          <javaEnabled>true</javaEnabled>
         </configuration>
         <executions>
           <execution>
             <phase>generate-sources</phase>
             <goals>
-              <goal>compile</goal>
+              <goal>generate</goal>
             </goals>
           </execution>
         </executions>
