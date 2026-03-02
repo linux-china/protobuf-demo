@@ -14,11 +14,11 @@
     <java.version>17</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
-    <protobuf-java.version>4.33.2</protobuf-java.version>
+    <protobuf-java.version>4.34.0</protobuf-java.version>
     <protostuff.version>1.8.0</protostuff.version>
-    <kotlin.version>2.3.0</kotlin.version>
-    <kotlinx-serialization.version>1.9.0</kotlinx-serialization.version>
-    <junit5.version>5.13.4</junit5.version>
+    <kotlin.version>2.3.10</kotlin.version>
+    <kotlinx-serialization.version>1.10.0</kotlinx-serialization.version>
+    <junit5.version>6.0.3</junit5.version>
     <jmh.version>1.37</jmh.version>
     <uberjar.name>benchmarks</uberjar.name>
   </properties>
@@ -51,12 +51,12 @@
     <dependency>
       <groupId>org.infinispan.protostream</groupId>
       <artifactId>protostream</artifactId>
-      <version>5.0.15.Final</version>
+      <version>15.0.13.Final</version>
     </dependency>
     <dependency>
       <groupId>org.infinispan.protostream</groupId>
       <artifactId>protostream-processor</artifactId>
-      <version>5.0.15.Final</version>
+      <version>15.0.13.Final</version>
       <scope>provided</scope>
     </dependency>
     <!--kotlin & serialization-->
@@ -102,7 +102,7 @@
     <dependency>
       <groupId>com.github.mp911de.microbenchmark-runner</groupId>
       <artifactId>microbenchmark-runner-junit5</artifactId>
-      <version>0.5.0.RELEASE</version>
+      <version>1.0.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -157,7 +157,7 @@
       <plugin>
         <groupId>io.github.ascopes</groupId>
         <artifactId>protobuf-maven-plugin</artifactId>
-        <version>4.1.2</version>
+        <version>5.0.1</version>
         <configuration>
           <protoc>${protobuf-java.version}</protoc>
           <!--<protoc>PATH</protoc>-->
