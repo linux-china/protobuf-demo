@@ -96,12 +96,12 @@
     <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
-      <version>3.27.4</version>
+      <version>3.27.7</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.github.mp911de.microbenchmark-runner</groupId>
-      <artifactId>microbenchmark-runner-junit5</artifactId>
+      <artifactId>microbenchmark-runner-junit</artifactId>
       <version>1.0.0</version>
       <scope>test</scope>
     </dependency>
@@ -330,9 +330,9 @@
   </build>
 
   <repositories>
-    <repository>
+<!--    <repository>
       <id>jitpack.io</id>
       <url>https://jitpack.io</url>
-    </repository>
+    </repository>-->
   </repositories>
 </project>
