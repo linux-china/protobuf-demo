@@ -1,6 +1,6 @@
 package org.mvnsearch.protobuf.benchmark
 
-import jmh.mbr.junit5.Microbenchmark
+import jmh.mbr.junit.Microbenchmark
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.decodeFromByteArray
 import kotlinx.serialization.encodeToByteArray

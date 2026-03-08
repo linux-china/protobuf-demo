@@ -3,7 +3,7 @@ package org.mvnsearch.protobuf.benchmark
 import io.protostuff.LinkedBuffer
 import io.protostuff.ProtostuffIOUtil
 import io.protostuff.runtime.RuntimeSchema
-import jmh.mbr.junit5.Microbenchmark
+import jmh.mbr.junit.Microbenchmark
 import org.mvnsearch.protobuf.BaseBenchmark
 import org.mvnsearch.protobuf.UserDO
 import org.openjdk.jmh.annotations.Benchmark

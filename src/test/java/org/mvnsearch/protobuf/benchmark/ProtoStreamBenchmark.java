@@ -1,6 +1,6 @@
 package org.mvnsearch.protobuf.benchmark;
 
-import jmh.mbr.junit5.Microbenchmark;
+import jmh.mbr.junit.Microbenchmark;
 import org.infinispan.protostream.ProtobufUtil;
 import org.infinispan.protostream.SerializationContext;
 import org.mvnsearch.protobuf.AccountDO;
